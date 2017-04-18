@@ -1,5 +1,5 @@
 public class Card {
-  public static final String[] COLORS = {"Club", "Heart", "Spade", "Diamond"};
+  public static final String[] COLORS = {"Clubs", "Hearts", "Spades", "Diamonds"};
   public static final String[] VALUES = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
   int color;
@@ -16,6 +16,15 @@ public class Card {
 
   public static int possibleValues() {
     return VALUES.length;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof Card) {
+      Card other = (Card)obj;
+      return this.color == other.color && this.value == other.value;
+    }
+    return false;
   }
 
   @Override
