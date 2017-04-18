@@ -14,12 +14,14 @@ public class OddAvg {
   public static double oddAverage(ArrayList<Integer> list) {
     int sum = 0;
     int count = 0;
+
     for(Integer i : list) {
       if (i % 2 != 0) {
         sum += i;
         count++;
       }
     }
+
     if (count == 0) {
       return 0;
     } else {

@@ -62,7 +62,6 @@ public class Deck {
         s += ", ";
       }
     }
-
     return s;
   }
 }
