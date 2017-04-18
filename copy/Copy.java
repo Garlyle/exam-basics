@@ -28,10 +28,9 @@ public class Copy {
     try {
       List<String> fileContent = Files.readAllLines(sourcePath);
       Path destinationPath = Paths.get(dest);
-      Files.createFile(destinationPath);
       Files.write(destinationPath, fileContent);
     } catch (IOException e) {
-      e.printStackTrace();
+      System.out.println("Error: could not open source file");
     }
   }
 }
