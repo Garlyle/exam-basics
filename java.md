@@ -35,16 +35,16 @@ The application is accepted if:
 ![anatomy](anatomy/AnatomyJava.png)
 
 #### Your answer:
-[add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:   
+1:  method definition
+2:  return type
+3:  method name
+4:  parameter type
+5:  parameter variable
+6:  local variable
+7:  method body
+8:  return value
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+
+Constructor is a class method used to give initial values to it's fields. The constructor is called when a new class is created (with the new keyword).
