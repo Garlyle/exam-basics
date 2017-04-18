@@ -11,7 +11,7 @@ public class OddAvg {
     System.out.println(oddAverage(list));
   }
 
-  private static double oddAverage(ArrayList<Integer> list) {
+  public static double oddAverage(ArrayList<Integer> list) {
     int sum = 0;
     int count = 0;
     for(Integer i : list) {
