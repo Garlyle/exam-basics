@@ -11,7 +11,7 @@ public class Deck {
       Card newCard;
       do {
         newCard = new Card(currentColor, (int) (Math.random() * Card.possibleValues()));
-      } while (!contains(newCard));
+      } while (contains(newCard));
         deckOfCards.add(newCard);
         currentColor++;
         if (currentColor >= Card.possibleColors()) {
@@ -40,13 +40,24 @@ public class Deck {
   }
 
   public Card draw() {
-    Card returnCard = new Card(1, 2);
+    Card returnCard = deckOfCards.get(0);
+    deckOfCards.remove(0);
 
     return returnCard;
   }
 
   @Override
   public String toString() {
-    return null;
+    String s = new String();
+    s = deckOfCards.size() + " cards - ";
+
+    for (int i = 0; i < Card.possibleColors(); i++) {
+      s += countColors(i) + " " + Card.COLORS[i];
+      if (i < Card.possibleColors() - 1) {
+        s += ", ";
+      }
+    }
+
+    return s;
   }
 }

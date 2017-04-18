@@ -1,6 +1,6 @@
 public class Card {
-  private static final String[] COLORS = {"Club", "Heart", "Spade", "Diamond"};
-  private static final String[] VALUES = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+  public static final String[] COLORS = {"Club", "Heart", "Spade", "Diamond"};
+  public static final String[] VALUES = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
   int color;
   int value;
